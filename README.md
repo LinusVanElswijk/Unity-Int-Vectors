@@ -21,12 +21,14 @@ for(int x = 0; x < 10; ++x) {
     MyFunction(new Vector(x, y));
   }
 }
+
 // you can write
 RectLoop(
   new Vector2i(0, 2),
   new Vector2i(10, 12),
   MyFunction
 );
+
 
 // Where you would normally write
 for(int x = 0; x < 10; ++x) {
@@ -36,6 +38,7 @@ for(int x = 0; x < 10; ++x) {
     }
   }
 }
+
 // you can write
 CubeLoop(
   new Vector3i(0, 2, -4), 
