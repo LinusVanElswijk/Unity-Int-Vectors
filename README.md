@@ -52,15 +52,6 @@ Implicit conversion only happens from int to float and not the other way around,
    vector3i r5 = g((Vector3i)b);  // OK -  make it explicit if it really is what you want to do
 ```
 
-### Semantically correct code
-Of course, it is possible to use float Vectors and to store integer values.
-However, this is very error prone.
-To make sure that a float vector always contains integer coordinates, you either have to round the vector after every mutation or make sure that every mutation results in new integer value coordinates.
-
-By using the correct type, Vector2i or Vector3i, you move this responsibility from the programmer to the compiler.
-
-An additional benefit of Vector2i and Vector3i is that the type immediately makes clear to the reader, that int values are expected. Otherwise you would have to make this clear in the documentation of the code.
-
 ### RectLoops and CubeLoops
 The library also adds new control structures, that make it easier to loop over values of vectors.
 
