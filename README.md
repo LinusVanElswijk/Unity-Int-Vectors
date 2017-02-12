@@ -23,7 +23,7 @@ All mathematical and equality operations are supported:
 ```
   var minus_two = -2 * vector3i.one;
   var treasure_location = 5 * vector2i.right + 3 * vector2i.up;
-  var b = -vector2i.one == vector2i.one - minus_two;
+  var b = -vector2i.one == vector2i.one + minus_two;
 ```
   
 ### Effortless integration
