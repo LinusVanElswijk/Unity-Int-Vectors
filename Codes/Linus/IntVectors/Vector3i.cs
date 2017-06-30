@@ -118,17 +118,17 @@ namespace Codes.Linus.IntVectors
                 case 0:
                     temp = y;
                     y = -z;
-                    z = y;
+                    z = temp;
                     break;
                 case 1:
                     temp = x;
                     x = z;
-                    z = -x;
+                    z = -temp;
                     break;
                 case 2:
                     temp = x;
                     x = -y;
-                    y = x;
+                    y = temp;
                     break;
             }
         }
@@ -141,17 +141,17 @@ namespace Codes.Linus.IntVectors
                 case 0:
                     temp = y;
                     y = z;
-                    z = -y;
+                    z = -temp;
                     break;
                 case 1:
                     temp = x;
                     x = -z;
-                    z = x;
+                    z = temp;
                     break;
                 case 2:
                     temp = x;
                     x = y;
-                    y = -x;
+                    y = -temp;
                     break;
             }
         }
